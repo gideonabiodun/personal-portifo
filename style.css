@@ -18,6 +18,8 @@
     background-attachment: fixed;
 }
 
+
+
 .menu {  
     display: flex;
     align-items: center;
@@ -79,8 +81,8 @@
 
 .gideon {
     color: #fff;
-    margin: 20px 0px 20px;
-    font-size: 50px;
+    margin: 20px 0px;
+    font-size: 4rem;
 }
 
 .web-dev {
@@ -90,7 +92,7 @@
 }
 
 .hello {
-    color: #fff;
+    color: #838181;
     letter-spacing: 2px;
     font-size: 18px;
 }
@@ -137,11 +139,7 @@
     /* border-radius: 2px; */
 }
 
-/* .Gideon {
-    opacity: 0.9;
-} */
-
-.about .gideon {
+.about #gideon {
     height: auto;
     width: 330px;
 }
@@ -367,6 +365,62 @@
 }
 
 
+.sect-two {
+    width: 100%;
+    height: 80%;
+    background-color: #000;
+    margin-top: -8.26rem;
+}
+
+/* services page  */
+
+.head-menu {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9)50%, rgba(0,0,0,0.9)50%), url(./images/laptp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* about page  */
+
+.menn-divv {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,.9)50%, rgba(0,0,0,.9)50%), url(./images/web.PNG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.gideon {
+    width: 300px;
+}
+
+.abot-gideon {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin: 4rem 30rem;
+    padding: 0.3rem;
+    background: #130d0f;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.me {
+    color: #f9004d;
+}
+.about-me {
+    margin-top: 4rem;
+}
+
+
+
+
+
 @media screen and (max-width: 1129px) {
     html {
         width: 100%;
@@ -407,8 +461,10 @@
         padding-bottom: 2.5rem;
     }
 
-    .about-text-one {
+    .about .about-text-one {
+        font-size: 4rem;
         padding-bottom: 1rem;
+        margin-top: 2rem;
     }
     
     .main {
@@ -507,6 +563,7 @@
     .about .about-text-one {
         font-size: 3rem;
         margin-left: 7rem;
+        margin-top: 2rem;
     }
 
      .about .about-text-two {

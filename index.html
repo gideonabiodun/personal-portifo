@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Port</title>
+    <title>Gideon Abiodun</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body class="main-body">
 
+    <!-- Hero-Nav -->
+
     <div class="hero">
         <nav class="menu">
-            <h2 class="logo"><span class="abi">G</span>ideon.</h2>
+            <h2 class="logo"><span class="abi">Gi</span>deon.</h2>
             <ul class="unorder">
-                <li class="lists"><a class="links" href="#">Home</a></li>
-                <li class="lists"><a class="links" href="#">About Me</a></li>
-                <li class="lists"><a class="links" href="#">Services</a></li>
-                <li  class="lists"><a class="links" href="#">Skills</a></li>
-                <li class="lists"><a  class="links" href="#">Contact Me</a></li>
+                <li class="lists"><a class="links" href="./index.html">Home</a></li>
+                <li class="lists"><a class="links" href="./about.html">About Me</a></li>
+                <li class="lists"><a class="links" href="./services.html">Services</a></li>
+                <li  class="lists"><a class="links" href="./skills.html">Skills</a></li>
+                <li class="lists"><a  class="links" href="./contact.html">Contact Me</a></li>
             </ul>
-        <a class="links" href="#" id="btn">Subscribe</a>
+        <a class="links" href="./contact.html" id="btn">Subscribe</a>
         </nav>
     
+        <!-- Intro-Content -->
 
     <div class="content">
-        <h4 class="hello">Hello, my name is</h4>
-        <h1 class="gideon">Gideon <span class="abi">Abiodun</span></h1>
-        <h3 class="web-dev">I'm a Web Developer.</h3>
+        <h4 class="hello">Hello, I'm</h4>
+        <h1 class="gideon"> <span class="auto-input" id="abi"></span></h1>
+        <!-- <h3 class="web-dev">I'm a Web Developer.</h3> -->
         <div class="newslatter">
             <form class="let-start">
             <input class="input-one" type="email" name="email" id="mail" placeholder="Enter Your Email">
@@ -39,10 +40,11 @@
         </div>
     </div>
 
+    <!-- About -->
 
     <section class="about">
         <div class="main">
-            <img src="./images/DSC_0180.jpg" class="gideon">
+            <img src="./images/DSC_0180.jpg" id="gideon">
             <div class="about-text">
                 <h2 class="about-text-one">About Me</h2>
                 <h5 class="about-text-two">Developer <span class="abi">& Designer</span></h5>
@@ -57,6 +59,9 @@
         </div>
     </section>
 
+    <!-- Services -->
+
+<section>
 
     <div class="service">
         <div class="title">
@@ -109,12 +114,16 @@
             </div>
         </div>
     </div>
+</section>
 
+    <!-- Contact Me -->
 
     <div class="contact-me">
         <p class="contact-para">Let Me Get You A Beautiful Website Today.</p>
         <a class="button-two" href="#">Hire Me</a>
     </div>
+
+    <!-- Footer -->
 
     <footer class="foot">
         <p class="foot-para-one">Gideon Abiodun</p>
@@ -128,6 +137,19 @@
         </div>
         <p class="end">&#169 Gideon Abiodun</p>
     </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+    strings: ["Gideon Abiodun,", "Web Developer,", "Web Designer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+}) 
+    </script>
 
 </body>
 </html>
