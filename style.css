@@ -572,10 +572,14 @@ aside {
         overflow-x: hidden;
     }
 
+    .menu {
+        padding: 0.6rem 1rem;
+    }
     .logo {
         font-size: 2rem;
-        margin-left: 4rem;
-        margin-top: 1rem;
+        /* margin-left: 4rem; */
+        /* padding: -7rem; */
+        /* margin-top: 1rem; */
     }
 
             #btn {
