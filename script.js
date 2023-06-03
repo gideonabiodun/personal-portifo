@@ -1,3 +1,12 @@
+// Auto types function
+
+var typed = new Typed(".auto-input", {
+    strings: ["Gideon Abiodun", "Web Developer", "Web Designer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+}) 
+
 // Animated bubble execution
 
 const bodyEl = document.querySelector("body");
@@ -8,7 +17,7 @@ bodyEl.addEventListener("mousemove", (event)=>{
     const spanEl = document.createElement("aside");
     spanEl.style.left = xPos + "px";
     spanEl.style.top = yPos + "px";
-    const size = Math.random() * 8;
+    const size = Math.random() * 10;
     spanEl.style.width = size + "px";
     spanEl.style.height = size + "px";
     bodyEl.appendChild(spanEl);
@@ -17,15 +26,21 @@ bodyEl.addEventListener("mousemove", (event)=>{
     }, 3000);
 }) 
 
+// Dropdown
 
-// Auto types function
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.toggle_btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
 
-var typed = new Typed(".auto-input", {
-    strings: ["Gideon Abiodun", "Web Developer", "Web Designer"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    loop: true
-}) 
+toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open');
+
+    
+    toggleBtnIcon.classList = isOpen
+   ? 'fa-solid fa-xmark'
+   : 'fa-solid fa-bars'
+}
 
 
 
